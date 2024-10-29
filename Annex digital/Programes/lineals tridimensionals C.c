@@ -21,7 +21,7 @@ punt puntMig(punt prim, punt seg, double rao){
 	puntmig.z = (seg.z+prim.z)/(double) rao;
 		
 	return puntmig;                     //D'aquesta manera, cada cop que li manem de fer "puntMig" 
-}                                      //ens retornar‡ el punt mig entre els dos donats
+}                                      //ens retornar√† el punt mig entre els dos donats
 
 int main(){
 	
@@ -30,9 +30,9 @@ int main(){
 	double m, rao;
 	FILE *f;
 	punt PM={0.25,0.5, 0};                
-    punt *Punts;                       //anomenem les variables i els unts que utilitzarem, tambÈ creem el fitxer
+    punt *Punts;                       //anomenem les variables i els unts que utilitzarem, tamb√© creem el fitxer
 	
-	srand(time(NULL));                 //desprÈs necessiarem utilitzar un nombre aleatori. AixÚ ens permetr‡ tenir aquest nombre
+	srand(time(NULL));                 //despr√©s necessiarem utilitzar un nombre aleatori. Aix√≤ ens permetr√† tenir aquest nombre
 	
 	printf("Escriu el nom del fitxer:\t");
 	scanf("%s",nom);
@@ -43,15 +43,15 @@ int main(){
     printf("Escriu el nombre de punts:\t");
 	scanf("%d",&p);
     
-    printf("Escriu la rao:\t"); // el programa ens demanar‡ posar nom al fitxer que ha creat, 
-	scanf("%lf",&rao);          // quantes iteracions volem fer, el nombre de punts i la raÛ del fractal 
+    printf("Escriu la rao:\t"); // el programa ens demanar√† posar nom al fitxer que ha creat, 
+	scanf("%lf",&rao);          // quantes iteracions volem fer, el nombre de punts i la ra√≥ del fractal 
     
     Punts = (punt *)calloc(p,sizeof(punt));
     
     if(Punts == NULL){
     printf("No hi ha suficient memoria");
     exit(1);
-    }          //AixÚ simplement Ès un mecanisme de seguretat, per si es posa un nombre de punts massa gran
+    }          //Aix√≤ simplement √©s un mecanisme de seguretat, per si es posa un nombre de punts massa gran
    
     
     f = fopen (nom, "w");  //S'obre el fitxer, per poder escriure
@@ -76,12 +76,12 @@ int main(){
 	
 	for(i=0 ; i<n ; i++){
 		
-		m = (rand()/(double)RAND_MAX)*p;                  // ens dÛna un nombre aleatori entre 0 i p (el nombre de punts)
+		m = (rand()/(double)RAND_MAX)*p;                  // ens d√≥na un nombre aleatori entre 0 i p (el nombre de punts)
     
 		for(j=1 ; j<=p ; j++){                             // es busca aquest punt aleatori
             
             if(m>=(j-1) && m<j){
-                PM = puntMig(PM, Punts[j], rao);            // es fa el punt mig entre el punt aleatori i el que ja tenÌem
+                PM = puntMig(PM, Punts[j], rao);            // es fa el punt mig entre el punt aleatori i el que ja ten√≠em
             }
         }
         	
