@@ -1,4 +1,4 @@
-# Mon Fractal
+# Món Fractal
 
 Here is my Baccalaureate Final Project, "Món Fractal" (Catalan). Please don't judge it too harshly, it was done when I was 16 or 17, and I haven't touched it since!
 
