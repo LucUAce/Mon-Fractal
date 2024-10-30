@@ -12,5 +12,5 @@ I've updated the Scratch files to the .sb3 format (they used to be .sb2!); hopef
 
 ![Captura de pantalla 2024-10-30 183532](https://github.com/user-attachments/assets/9068cc9d-7918-418e-bb11-f8514a2f42f5)
 
-More details on the programs and audio files are provided in the PDF. 
+More details on the programs and audio files are provided in the "TR Món Fractal" PDF. 
 
